@@ -31,5 +31,13 @@ public class CustomListTest {
         });
     }
 
+    @Test
+    public void testCountCities() {
+        CustomList list = new CustomList();
+        City city = new City("Edmonton", "AB");
+        list.addCity(city);
+        // Should be 1 after adding one city
+        assertEquals(1, list.countCities());
+    }
 
 }
